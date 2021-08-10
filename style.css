@@ -1,0 +1,52 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+.talent-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+.talent-card {
+  background: #fff;
+  padding-top: 1em;
+  transition: all .3s ease-in-out; }
+  .talent-card__hero {
+    height: 300px;
+    position: relative; }
+    .talent-card__hero img {
+      object-fit: cover;
+      height: 100%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      left: 50%;
+      top: 50%; }
+  .talent-card__text {
+    text-align: center;
+    padding: 1em 0; }
+    .talent-card__text h3 {
+      color: #707070;
+      padding-bottom: .5em; }
+    .talent-card__text i {
+      cursor: pointer;
+      color: #707070; }
+.talent-card:hover {
+  background: #02333E; }
+  .talent-card:hover h3 {
+    color: #FFFFFF; }
+  .talent-card:hover i {
+    color: #FFFFFF; }
+.talent-modal {
+  width: 100%;
+  background: #02333E;
+  position: relative; }
+  .talent-modal p {
+    color: #fff;
+    background: #02333E;
+    padding: 2em;
+    display: none; }
+
+.talent-card-active {
+  background: #02333E; }
+  .talent-card-active h3 {
+    color: #FFFFFF; }
+  .talent-card-active i {
+    color: #FFFFFF; }

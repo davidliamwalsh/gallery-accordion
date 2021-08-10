@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="talent">
+    <div class="talent-container">
+      <div id="talentCard1" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="talentCard2" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="talentCard3" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="mydiv">
+
+      <div class="talent-modal">
+        <p class="parra_1">I joined the business in 2012 as an Auction Specialist, my interview was legendary. I arrived from a rival auction house, Jamie Cooke (MD) was convinced I was a spy for at least the first year! I helped to develop the West Midlands region; ranging from the recruitment of agents to training said agents, and of course Sales. In 2014 I was promoted to Senior Auction Specialist and then again to Midlands Area Team Leader a year later. I oversaw 20 live auction events per year with a team of 5, whilst maintaining my position as Top Seller for 5 consecutive years. In 2019 I was promoted to Regional Performance Manager initially with a team of 8 covering Yorkshire and West Midlands regions. Today I have 14 direct reports covering The Midlands, West Midlands and The South. I love the comradery and enjoy the fast pace nature of the business. I know it sounds cheesy but you really feel as though you’re part of something special here.</p>
+      </div>
+
+      <div class="talent-modal">
+        <p class="parra_2">test modal 2</p>
+      </div>    
+        
+      <div class="talent-modal">
+        <p class="parra_3">test modal 3</p>
+      </div>  
+
+    </div>
+
+    <div class="talent-container">
+      <div id="talentCard4" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="talentCard5" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+      <div id="talentCard6" class="talent-card">
+        <div class="talent-card__hero">
+          <img src="./images/Board-member_images-03.png" alt="">
+        </div>
+        <div class="talent-card__text">
+          <h3>Read my story</h3>
+          <i class="fa fa-chevron-down"></i>
+        </div>
+      </div>
+
+    </div>
+    
+    <div class="mydiv">
+      <div class="talent-modal">
+        <p class="parra_4">test modal 4</p>
+      </div>
+
+      <div class="talent-modal">
+        <p class="parra_5">test modal 5</p>
+      </div>    
+        
+      <div class="talent-modal">
+        <p class="parra_6">test modal 6</p>
+      </div>  
+
+    </div>
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+
+  
+    function toggleAbout() {
+
+      const modal = document.getElementById('talentModal')
+
+      $('.fa-chevron-down').click(function(event) {
+        $(this).closest('.talent-card').toggleClass('talent-card-active').siblings().removeClass('talent-card-active');
+        
+
+        let i = 1;
+        while (i<7) {
+          if ($('#talentCard'+i).hasClass('talent-card-active')) {
+            
+            $(".parra_"+i).slideDown(500);
+          } else {
+            $(".parra_"+i).slideUp(150);
+           
+          }
+          i++;
+        }
+      })
+    }
+
+    $(document).ready(function(){
+      toggleAbout()
+    });
+
+  </script>
+</body>
+</html>
+
+
+
